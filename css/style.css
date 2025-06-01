@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    min-height: 100%;
+}
+html{
+    font-family: 'Century Gothic';
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+.container{
+    max-width: 1205px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    background-color: #F7F7F7;
+    min-height: 117px;
+}
+/* --------------------------secHeader-menu-------------------------------- */
+.secHeader-menu{
+    background-color: #F7F7F7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.conHMenu{
+    display: flex;
+    min-height: 117px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+.list_item{
+    margin-right: 49px;
+}
+.list-link{
+    text-decoration: none;
+    color: #303030;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+.list-link:hover,
+.list-link:focus{
+    color: #FF5D24;
+}
+.HMenu_button{
+    font-family: 'Century Gothic';
+    width: 126px;
+    height: 43px;
+    background-color: #FF5D24;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.HMenu_button:hover,
+.HMenu_button:focus{
+    background-color: white;
+    color: #FF5D24;
+}
+/* --------------------------secHeadInfo-------------------------------- */
+.secHeadInfo{
+    margin-top: 62px;
+    margin-bottom: 180px;
+}
+
+.HeadInfo__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+.HeadInfo__text_h2{
+    font-size: 65px;
+}
+.HeadInfo__text_h2_orange{
+    color: #FF5D24;
+}
+.HeadInfo__text_p{
+    font-size: 18px;
+}
+.HeadInfo__img{
+    width: 1082px;
+    height: 692px;
+    background: url('../img/kids.png') no-repeat;
+    margin-bottom: 45px;
+}
+.HeadInfo__img__smileyman{
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    left: 922px;
+    top: 239px;
+    width: 314px;
+    height: 360px;
+    padding: 29px 28px 40px 28px;
+    box-shadow: 0px 0px 59px -40px rgba(0, 0, 0, 0.6);
+}
+.HeadInfo__img__sm_img{
+    width: 258px;
+    height: 218px;
+    border-radius: 30px;
+}
+
+.HeadInfo__img__sm_text{
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HeadInfo__img__sm_t_p{
+    font-size: 24px;
+    color: #FF5D24;
+    font-weight: bold;
+}
+.HeadInfo__img__sm_t_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: #56b9b4b9;
+    margin-bottom: 17px;
+}
+
+.HeadInfo__img__pig{
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    left: 123px;
+    width: 314px;
+    height: 360px;
+    padding: 29px 28px 40px 28px;
+    box-shadow: 0px 0px 59px -40px rgba(0, 0, 0, 0.6);
+}
+.HeadInfo__img__pig_img{
+    width: 258px;
+    height: 218px;
+    border-radius: 30px;
+}
+.HeadInfo__img__pig_text{
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HeadInfo__img__pig_t_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: #f4633fa6;
+    margin-bottom: 17px;
+}
+.HeadInfo__img__pig_t_p{
+    font-size: 24px;
+    color: #FF5D24;
+    font-weight: bold;
+}
+.dots{
+    position: relative;
+    z-index: -1;
+    right: 135px;
+    top: -50px;
+}
+
+.ArrowSnake{
+    position: relative;
+    left: 1120px;
+    top: 280px;
+}
+
+
+.HeadInfo__table{
+    width: 430px;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 505px;
+}
+.HeadInfo__table_text_img{
+    width: 1px;
+    height: 49px;
+}
+.HeadInfo__table_text_h2{
+    font-size: 50px;
+}
+.HeadInfo__table_text_h2_orange{
+    color: #FF5D24;
+}
+.HeadInfo__table_text_p{
+    font-size: 16px;
+}
+/* --------------------------secAboutUs-------------------------------- */
+.AUimg2{
+    width: 562px;
+    height: 560px;
+    background: url('../img/au img 2.png') no-repeat;
+}
+/* --------------------------secOurCouses------------------------------- */
+.secOurCouses{
+    margin-bottom: 180px;
+}
+.OurCdivText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.OurCp{
+    font-size: 18px;
+    background-color: #EFEFEF;
+    width: 133px;
+    height: 39px;
+    text-align: center;
+    align-content: center;
+    color: #FF5D24;
+    margin-bottom: 39px;
+}
+.OurCh2{
+    font-size: 50px;
+}
+.OurCtext{
+    margin-bottom: 74px;
+}
+.OurCslider{
+    display: flex;
+    flex-direction: row;
+}
+.OurCsliderText{
+    font-size: 24px;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+.OurCslider_arrowRight{
+    transform: scale(-1,-1);
+}
+.OurCslider_arrow{
+    width: 24px;
+    height: 24px;
+}
+
+.OurCcardImg{
+    display: flex;
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+}
+.OurCcards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 61px 61px;
+    justify-content: center;
+}
+.OurCcard{
+    padding: 51px 10px 51px 41px;
+    width: 369px;
+    height: 405px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 59px -40px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+.OurCcard:hover,
+.OurCcard:focus{
+    background-color: #eeeeee;
+}
+
+.OCC_img_water{
+    background-color: #F4643F;
+}
+.OCC_img_med{
+    background-color: #F0C24A;
+}
+.OCC_img_edu{
+    background-color: #56B9B4;
+}
+
+.OurCcard__h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.OurCcard__p{
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.OurCcard_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+    width: 95px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.OurCcard_button:hover,
+.OurCcard_button:focus{
+    background-color: #F4643F;
+    border: 1px solid #F4643F;
+    color: white;
+}
+
+/* --------------------------secAboutUs2-------------------------------- */
+.secAboutUs2{
+    margin-bottom: 180px;
+
+}
+.conAboutUs2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.AUimg{
+    width: 562px;
+    height: 560px;
+    background: url('../img/AU2img.png') no-repeat;
+    border-top-left-radius:300px;
+    border-top-right-radius:300px;
+}
+.AUimgBack{
+    position: relative;
+    z-index: -1;
+    top: 315px;
+    right: 36px;
+    background-color: #F7F7F7;
+    width: 635px;
+    height: 286px;
+}
+.AUp{
+    font-size: 18px;
+    background-color: #EFEFEF;
+    width: 118px;
+    height: 39px;
+    text-align: center;
+    align-content: center;
+    color: #FF5D24;
+    margin-bottom: 39px;
+}
+.AUh2{
+    font-size: 50px;
+    margin-bottom: 33px;
+}
+.AUp2{
+    line-height: 40px;
+    margin-bottom: 46px;
+}
+.AUbutton{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    width: 149px;
+    height: 48px;
+    background-color: #FF5D24;
+    color: white;
+    border: 1px solid #FF5D24;
+    transition: all 0.3s ease-in-out;
+}
+.AUbutton:hover,
+.AUbutton:focus{
+    color: #FF5D24;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+
+/* --------------------------secOurCouses2-------------------------------- */
+.secOurCouses2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 124px;
+}
+.OCtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.OCp{
+    font-size: 18px;
+    background-color: #EFEFEF;
+    width: 133px;
+    height: 39px;
+    text-align: center;
+    align-content: center;
+    color: #FF5D24;
+    margin-bottom: 39px;
+}
+.OCh2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 74px;
+}
+.OCcards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 49px 49px;
+    justify-content: center;
+}
+.OCcard{
+    display: flex;
+    flex-direction: column;
+    padding: 18px 18px 28px 18px;
+    width: 369px;
+    height: 480px;
+    background-color: #ffffff;
+    border: 1px solid #D1D1D1;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.OCcard:hover,
+.OCcard:focus{
+    background-color: #eeeeee;
+    border:1px solid #eeeeee;
+    box-shadow: 0px 0px 59px -40px rgba(0, 0, 0, 0.6);
+}
+.OCcard_img{
+    border-radius: 20px;
+}
+.OCcard_p{
+    font-size: 14px;
+    color: #FF5D24;
+    margin-top: 20px;
+}
+.OCcard_h2{
+    margin-top: 14px;
+    font-size: 20px;
+    color: #252525;
+}
+.OCcard_p2{
+    font-size: 14px;
+    color: #959595;
+    margin-top: 16px;
+}
+.OCcard_button{
+    font-family: 'Century Gothic';
+    margin-top: 17px;
+    width: 90px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.OCcard_button:hover,
+.OCcard_button:focus{
+    color: white;
+    background-color: #FF5D24;
+}
+/* --------------------------secFooter-------------------------------- */
+.secFooter{
+    margin-bottom: 357px;
+}
+.conHowCan{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 349px;
+    border-radius: 20px;
+    background: url('../img/HowCanIMG.png') no-repeat;
+    background-color: #252525;
+    background-blend-mode: overlay;
+}
+.HC_h2{
+    margin-top: 48px;
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+}
+.HC_p{
+    font-size: 16px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bold;
+    text-align: center;
+}
+.HC_button{
+    width: 83.2px;
+    height: 83.2px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #FF5D24;
+    box-shadow: 0px 0px 0px 11px #db4e1a;
+    margin-bottom: 48px;
+    transition: all 0.3s ease-in-out;
+}
+.HC_button:hover,
+.HC_button:focus{
+    background-color: #db4e1a;
+    box-shadow: 0px 0px 0px 9px #ffffff;
+}
