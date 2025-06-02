@@ -59,6 +59,11 @@ header{
 .list-link:focus{
     color: #FF5D24;
 }
+.HMenu_controllers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .HMenu_button{
     font-family: 'Century Gothic';
     width: 126px;
@@ -74,6 +79,11 @@ header{
 .HMenu_button:focus{
     background-color: white;
     color: #FF5D24;
+}
+.HMenu_Bars{
+    display: none;
+    margin-right: 10px;
+    filter:opacity(80%);
 }
 /* --------------------------secHeadInfo-------------------------------- */
 .secHeadInfo{
@@ -223,7 +233,13 @@ header{
     height: 560px;
     background: url('../img/au img 2.png') no-repeat;
 }
+.secAB2{
+    margin-top: 100px;
+}
 /* --------------------------secOurCouses------------------------------- */
+.secOC{
+    margin-top: 100px;
+}
 .secOurCouses{
     margin-bottom: 180px;
 }
@@ -326,6 +342,9 @@ header{
     border-radius: 5px;
     background-color: white;
     transition: all 0.3s ease-in-out;
+}
+.OurCcard_button_a{
+    text-decoration: none;
 }
 .OCcard_arrow{
     width: 18px;
@@ -529,7 +548,71 @@ header{
     background-color: #db4e1a;
     box-shadow: 0px 0px 0px 9px #ffffff;
 }
-
+/* --------------------modal----------------------- */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.modal__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    max-width: 600px;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+}
+.modal--open{
+    display: flex;
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.modal__button{
+    border: 1px solid #F4643F;
+    color: white;
+    background-color: #F4643F;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    transition: all 0.3s;
+}
+.modal__button:hover,
+.modal__button:focus{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.btn--open{
+    position: fixed;
+    left: 0;
+    right: 0;
+    border: 1px solid darkblue;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.btn--open:hover,
+.btn--open:focus{
+    background-color: darkblue;
+    color: white;
+}
 /* ----------------MEDIA до 320px------------------- */
 @media (max-width:1300px){
     .conAboutUs2{
@@ -541,6 +624,25 @@ header{
         align-items: center;
         text-align: center;
         margin-bottom: 40px;
+    }
+    
+    .AUimg2{
+        margin-bottom: 50px;
+    }
+    .HeadInfo__text{
+        flex-direction: column;
+        justify-content: center;   
+        text-align: center;
+    }
+    .HeadInfo__text_h2{
+        margin-bottom: 20px;
+    }
+    .ArrowSnake{
+        left: 950px;
+        top: 340px;
+    }
+    .HeadInfo__img__smileyman{
+        left: 822px;
     }
 }
 @media (max-width: 1230px){
@@ -564,9 +666,36 @@ header{
         text-align: center;
     }
 }
+@media (max-width:1150px){
+    .HeadInfo__img__smileyman{
+        left: 722px;
+    }
+}
+@media (max-width:1099px){
+    .HeadInfo__img__smileyman,.HeadInfo__img__pig,.ArrowSnake{
+        display: none;   
+    }
+    .HeadInfo__table{
+    margin-left: 0px;
+    }
+    .conHeadInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .HeadInfo__img{
+        width: 500px;
+        height: 500px;
+        background-position: center;
+    }
+}
 @media (max-width:800px){
     .HMenu_list{
-        content:url('../img/Bars.svg');
+        display: none;
+    }
+    .HMenu_Bars{
+        display: inline;
     }
     .OCcards{
         grid-template-columns: repeat(1,auto);
@@ -580,10 +709,20 @@ header{
         top: 200px;
         right: 0px;
     }
-    .AUimg{
+    .AUimg,.AUimg2{
         background-position: center;
         width: 310px;
         height: 308.9px;
+    }
+    
+}
+@media(max-width:520px){
+    .HeadInfo__img{
+        width: 310px;
+        height: 310px;
+    }
+    .HeadInfo__table{
+        width: 300px;
     }
 }
 @media (max-width:480px){
@@ -612,6 +751,9 @@ header{
     }
     .AUh2{
         font-size: 35px;
+    }
+    .HeadInfo__text_h2{
+        font-size: 40px;
     }
     .AUp2{
         font-size: 15px;
