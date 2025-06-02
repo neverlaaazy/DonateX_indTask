@@ -32,7 +32,7 @@ header{
     to { opacity: 1; }
 }
 .section {
-    animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 /* --------------------------secHeader-menu-------------------------------- */
 .secHeader-menu{
@@ -72,6 +72,7 @@ header{
     justify-content: center;
 }
 .HMenu_button{
+    z-index: 110;
     font-family: 'Century Gothic';
     width: 126px;
     height: 43px;
@@ -87,12 +88,20 @@ header{
     background-color: white;
     color: #FF5D24;
 }
+.HMenu_logo{
+    z-index: 110;
+}
 .HMenu_Bars{
     display: none;
     width: 30px;
     height: 30px;
     margin-right: 10px;
     filter:opacity(80%);
+}
+/* --------------------------burger-------------------------------- */
+.burger{
+    border: none;
+    background-color: transparent;
 }
 /* --------------------------secHeadInfo-------------------------------- */
 .secHeadInfo{
@@ -566,7 +575,7 @@ header{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.63);
     display: none;
     justify-content: center;
     align-items: center;
